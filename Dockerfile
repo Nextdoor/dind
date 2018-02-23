@@ -9,7 +9,6 @@ RUN apt-get update -qq && apt-get install -qqy \
     lxc \
     iptables
 
-
 # Install the magic wrapper.
 ADD ./wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
